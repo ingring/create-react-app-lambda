@@ -5,7 +5,7 @@ import axios from "axios"
 export async function handler(event, context) {
   try {
     const response = await axios.get(
-      "https://random-data-api.com/api/users/random_users", { headers: { Accept: "application/json" } })
+      "https://random-data-api.com/api/users/random_user", { headers: { Accept: "application/json" } })
     const data = response.data
     return {
       statusCode: 200,
